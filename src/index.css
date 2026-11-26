@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --color-lavender: #A78BFA;
+    --color-lavender-deep: #5B3CC4;
+    --color-rose: #F4A6C1;
+    --color-sky: #91C9F7;
+    --color-yellow: #FFE08A;
+    --color-mint: #A9D9BD;
+    --color-cream: #FFF9F5;
+    --color-surface: #FFFFFF;
+    --color-ink: #29243A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    background-color: #FFF9F5;
+    color: #29243A;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom Leaflet aesthetics */
+.leaflet-container {
+  font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+  background-color: #F4F1FA;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 16px;
+  box-shadow: 0 12px 30px -8px rgba(41, 36, 58, 0.16);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  padding: 2px;
+}
+
+.leaflet-popup-tip {
+  box-shadow: none;
+}
+
+.edupath-pin {
+  background: transparent;
+  border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

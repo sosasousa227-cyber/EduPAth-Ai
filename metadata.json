@@ -1,0 +1,6 @@
+{
+  "name": "EduPath AI",
+  "description": "Plataforma educativa inteligente de Paraguay para descubrir academias, bibliotecas, centros de capacitación, cursos y recibir orientación con inteligencia artificial.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
